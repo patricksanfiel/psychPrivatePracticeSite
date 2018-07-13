@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
+    {% endblock %}
+  </head>
+  <body>
+    {% block pagecontent %}
+    <div class="indexPageImage" id="indexJumbotron">
+      <div class="row">
+        <h1 id="indexJumbotronHeading" class="col-12">Business Name Goes Here</h1>
+      </div>
+      <div class="row">
+        <p class="col-12" id="indexJumbotronBody">We are dedicated to assisting others to find their path, explore their passions, face their fears and grow as individuals by using their inner strength and talents to reach their full potential.</p>
+      </div>
+      <div class="row">
+          <p class="col-12" id="buttonP">
+            <a href="{% url 'new_appointment' %}" id="appointmentButton">Make an appointment</a>
+          </p>
+      </div>
+    </div>
+    <div class="row">
+      <a href="{% url 'team' %}">
+        <div class="col-6 indexPageImage" id="ourTeam">
+          <p class="tileText">Our Team</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-6 indexPageImage" id="ourLocation">
+          <p class="tileText">Our Location</p>
+        </div>
+      </a>
+    </div>
+    <div class="row">
+      <a href="#">
+        <div class="col-6 indexPageImage" id="services">
+          <p class="tileText">Services</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="col-6 indexPageImage" id="resources">
+          <p class="tileText">Resources</p>
+        </div>
+      </a>
+    </div>
+    {% endblock %}
+  </body>
+</html>

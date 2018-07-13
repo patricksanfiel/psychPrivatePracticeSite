@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'css/team.css' %}" type="text/css" />
+    {% endblock %}
+  </head>
+  <body id="{% block bodyid %}teamBody{% endblock %}">
+    {% block pagecontent %}
+    <div id="teamPageContent">
+      <div class="row" id="teamHeader">
+        <h1 class="col-12">Our Team</h1>
+      </div>
+      {% for therapist in therapists %}
+      <div class="therapistDiv">
+        <div class="row">
+          <p class="col-6">Pic goes here</p>
+          <h1 class="therapistHeader col-6">{{therapist.name}}</h1>
+        </div>
+        <div class="row">
+          <div class="therapistBody col-12"><p>{{therapist.bio|linebreaks}}</p></div>
+        </div>
+      </div>
+      {% endfor %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing:border-box;
+}
+
+/* Grid System */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Nav Columns(Grid divided by 5) */
+.basecol--1 {width:20%;}
+.basecol--2 {width:40%;}
+.basecol--3 {width:60%;}
+.basecol--4 {width:80%;}
+.basecol--5 {width:100%;}
+/*  */
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#teamHeader{
+  margin-top: 1.5em;
+	margin-bottom: 0em;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 1.8em;
+	background-color: #e6e6e6;
+}
+#teamBody{
+  background-color: #3a92d1;
+	background: rgb(121,159,180);
+	background: -moz-linear-gradient(0deg, rgba(121,159,180,1) 10%, rgba(58,146,209,1) 87%);
+	background: -webkit-linear-gradient(0deg, rgba(121,159,180,1) 10%, rgba(58,146,209,1) 87%);
+	background: linear-gradient(0deg, rgba(121,159,180,1) 10%, rgba(58,146,209,1) 87%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#799fb4",endColorstr="#3a92d1",GradientType=1);
+  /* overflow: scroll; */
+}
+
+.therapistDiv{
+  margin-top: 0.5em;
+  background-color: #e6e6e6;
+  margin-left: 1%;
+  margin-right: 1%;
+  box-shadow: 3px 5px 5px;
+  padding: 1em;
+  border: 1px solid #3a92d1;
+  /* border-radius: 5px; */
+	width: 98%;
+}
+.therapistHeader{
+  font-size: 1.5em;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+.therapistBody{
+  font-family: 'Crimson Text', serif;
+}
+
+#teamPageContent{
+  margin-bottom: 5em;
+}

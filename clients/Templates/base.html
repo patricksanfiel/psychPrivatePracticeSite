@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Private Practice-{% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Archivo|Cormorant+Unicase|Crimson+Text|EB+Garamond|Gentium+Basic|Heebo|Hind+Madurai|Josefin+Slab|Mukta+Mahee|Poiret+One|Quattrocento|Rambla|Rokkitt|Sanchez|Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css" />
+    <script type="text/javascript" src="{% static "js/base.js" %}"></script>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body id="{% block bodyid %}{% endblock %}"class="{% block body_class %}{% endblock %} mainBody">
+    <div class="row topnav" id="myTopNav">
+      <nav>
+        <ul class="dropdownNavList">
+          <a href="{% url 'index' %}" class="navAnchor" id="homeAnchor">
+            <li class="col-2 navItem navs" id="homeNav">Home</li>
+          </a>
+          <a href="{% url 'team' %}" class="navAnchor" id="aboutAnchor">
+            <li class="col-2 navItem navs" id="aboutNav">Our Team</li>
+          </a>
+          <li class="col-2 navItem" id="logoNav">
+            <i class="fas fa-hands-helping"></i>
+          </li>
+          <a href="{% url 'location' %}" class="navAnchor" id="locationAnchor">
+            <li class="col-2 navItem navs" id="locationNav">Location</li>
+          </a>
+          <a href="{% url 'services' %}" class="navAnchor" id="servicesAnchor">
+            <li class="col-2 navItem navs" id="servicesNav">Services</li>
+          </a>
+          <a href="#" class="navAnchor" id="resourcesAnchor">
+            <li class="col-2 navItem navs" id="resourcesNav">Resources</li>
+          </a>
+          <a href="javascript:void(0);" class="icon col-8"
+          id="hamburgerIcon" >
+            <i class="fa fa-bars" id="threeBars"></i>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    {% block pagecontent %}
+    {% endblock %}
+    <div class="row" id="footer">
+      <p class="col-12" id="footerText">Coded with <i class="far fa-heart"></i> by <a href="#">Patrick</a> in Miami</p>
+    </div>
+  </body>
+</html>

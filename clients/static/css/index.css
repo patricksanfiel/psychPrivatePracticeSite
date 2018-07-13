@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing:border-box;
+}
+
+/* Grid System */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Nav Columns(Grid divided by 5) */
+.basecol--1 {width:20%;}
+.basecol--2 {width:40%;}
+.basecol--3 {width:60%;}
+.basecol--4 {width:80%;}
+.basecol--5 {width:100%;}
+/*  */
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+  overflow: scroll;
+}
+
+#indexJumbotron{
+  background-image: url('../images/wellness.png');
+  background-size: cover;
+  height: 25em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+  border: 2px solid #e6e6e6;
+  border-left: 4px solid #e6e6e6;
+  border-right: 4px solid #e6e6e6;
+}
+#indexJumbotronHeading{
+  margin-top: 2em;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em;
+}
+#indexJumbotronBody{
+  font-family: 'Crimson Text', serif;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  padding: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: -0.5em;
+}
+#appointmentButton{
+  background-color: #3a92d1;
+  padding: 0.8em;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+}
+#buttonP{
+  text-align: center;
+}
+
+/* #ourMission{
+  background-image: url('../images/mission_image.png');
+  background-size: cover;
+  height: 0em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+#ourTeam{
+  background-image: url('../images/our_team.png');
+  background-size: cover;
+  height: 17em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #e6e6e6;
+  border-left: 4px solid #e6e6e6;
+}
+
+#ourLocation{
+  background-image: url('../images/our_location.png');
+  background-size: cover;
+  height: 17em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #e6e6e6;
+  border-right: 4px solid #e6e6e6;
+}
+
+#services{
+  background-image: url('../images/services.png');
+  background-size: cover;
+  height: 17em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #e6e6e6;
+  border-left: 4px solid #e6e6e6;
+}
+
+#resources{
+  background-image: url('../images/resources_image.png');
+  background-size: cover;
+  height: 17em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #e6e6e6;
+  border-right: 4px solid #e6e6e6;
+}
+
+#services, #resources{
+  margin-bottom: 2em;
+}
+
+.tileText{
+  /* margin: auto; */
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+  font-family: 'Poiret One', cursive;
+  color: #e6e6e6;
+  text-shadow: 2px 2px 2px black;
+  /* margin-top: 3em; */
+}
